@@ -16,7 +16,29 @@ export const withdrawMoney = (amount) => {
 }
 export const remAll = () => {
     return {
-        type:'REMALL',
-        payload:0
+        type: 'REMALL',
+        payload: 0
+    }
+}
+export const addList = (data) => {
+    return {
+        type: "ADD_LIST",
+        payload: {
+            id: new Date().getTime().toString(),
+            data: data
+        }
+    }
+}
+export const delList = (id) => {
+    return {
+        type: "DELETE_LIST",
+        payload: {
+            id: id
+        }
+    }
+}
+export const remAllLIST = () => {
+    return {
+        type: "REMOVE_ALL_LIST"
     }
 }

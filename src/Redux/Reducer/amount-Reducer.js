@@ -8,6 +8,7 @@ const amountReducer = (state = 0, action) => {
     else if (action.type==='REMALL') {
         return state * action.payload;
     }
+    
     else {
         return state;
     }
