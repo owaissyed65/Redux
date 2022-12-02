@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import FakeJson from './FakeJson'
 import { delList, remAllLIST } from './Redux/action-creator/action'
 
 const Map = () => {
@@ -18,6 +19,9 @@ const Map = () => {
             <div style={{ marginTop: '10px' }}>
                 <button onClick={() => { dispatch(remAllLIST()) }}>Delete All</button>
             </div>
+        <div>
+            {/* <FakeJson/> */}
+        </div>
         </div>
     )
 }
